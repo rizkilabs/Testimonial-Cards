@@ -1,38 +1,51 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Testimonial Cards</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testimonial Cards</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
 
-    <div class="container">
-        <div class="testimonial-card">
-            <img src="https://i.pravatar.cc/100?img=1" alt="Foto User">
-            <p>"Aplikasinya keren banget!"</p>
-            <h4>Rizki</h4>
-            <small>Web Developer</small>
-        </div>
+  <!-- Tombol untuk ganti mode terang/gelap -->
+  <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
 
-        <div class="testimonial-card">
-            <img src="https://i.pravatar.cc/100?img=2" alt="Foto User">
-            <p>"Membantu banget buat kerjaan sehari-hari!"</p>
-            <h4>Sinta</h4>
-            <small>UI Designer</small>
-        </div>
+  <!-- Container untuk semua kartu testimoni -->
+  <div class="container">
+    
+    <!-- Kartu 1 -->
+    <div class="testimonial-card">
+      <img src="https://i.pravatar.cc/100?img=1" alt="Foto User 1" />
+      <p>"Aplikasinya keren banget dan sangat membantu!"</p>
+      <h4>Rizki</h4>
+      <small>Web Developer</small>
     </div>
 
-    <script>
-        function toggleDarkMode() {
-            document.body.classList.toggle('dark-mode');
-        }
-    </script>
+    <!-- Kartu 2 -->
+    <div class="testimonial-card">
+      <img src="https://i.pravatar.cc/100?img=2" alt="Foto User 2" />
+      <p>"Layanan cepat dan tampilannya user-friendly."</p>
+      <h4>Sinta</h4>
+      <small>UI Designer</small>
+    </div>
+
+    <!-- Kartu 3 -->
+    <div class="testimonial-card">
+      <img src="https://i.pravatar.cc/100?img=3" alt="Foto User 3" />
+      <p>"Saya sangat puas dengan hasilnya. Top!"</p>
+      <h4>Budi</h4>
+      <small>Freelancer</small>
+    </div>
+
+  </div>
+
+  <!-- Script untuk toggle dark mode -->
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
 
 </body>
-
 </html>

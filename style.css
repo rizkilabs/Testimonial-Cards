@@ -27,7 +27,7 @@ body.dark-mode small {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
     padding: 20px;
 }
