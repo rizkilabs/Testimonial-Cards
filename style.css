@@ -1,48 +1,56 @@
+/* ===== Styling Dasar ===== */
 body {
     background: #f4f4f4;
+    font-family: sans-serif;
     margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-body.dark-mode {
-    background-color: #222;
-    color: #eee;
+button {
+    padding: 10px 16px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
 }
 
-body.dark-mode .testimonial-card {
-    background-color: #333;
-    color: #eee;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+button:hover {
+    background-color: #0056b3;
 }
 
-body.dark-mode small {
-    color: #ccc;
-}
-
+/* ===== Container untuk Kartu ===== */
 .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.container {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
-}
-
+/* ===== Kartu Testimoni ===== */
 .testimonial-card {
-    padding: 20px;
     background: #fff;
+    color: #333;
+    padding: 20px;
+    width: 300px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    font-family: sans-serif;
-    color: #333;
-    margin: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Isi Kartu ===== */
 .testimonial-card img {
     width: 80px;
     height: 80px;
@@ -67,6 +75,7 @@ body.dark-mode small {
     font-size: 14px;
 }
 
+/* ===== Responsif: Mobile ===== */
 @media (max-width: 600px) {
     .testimonial-card {
         width: 100%;
@@ -76,4 +85,29 @@ body.dark-mode small {
         flex-direction: column;
         align-items: center;
     }
+}
+
+/* ===== Dark Mode ===== */
+body.dark-mode {
+    background-color: #222;
+    color: #eee;
+}
+
+body.dark-mode .testimonial-card {
+    background-color: #333;
+    color: #eee;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode small {
+    color: #ccc;
+}
+
+body.dark-mode button {
+    background-color: #555;
+    color: #eee;
+}
+
+body.dark-mode button:hover {
+    background-color: #777;
 }
