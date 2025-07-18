@@ -52,7 +52,7 @@ testimonial-cards/
 ## 🌐 Live Demo
 
 You can view it live here:  
-[https://rizkilabs.github.io/testimonial-cards/](https://rizkilabs.github.io/testimonial-cards/)  
+[https://rizkilabs.github.io/Testimonial-Cards/](https://rizkilabs.github.io/Testimonial-Cards/)  
 _(Replace with your actual GitHub Pages link if you deployed it)_
 
 ## 🙌 Credits
