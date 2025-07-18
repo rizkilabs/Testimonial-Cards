@@ -7,7 +7,28 @@
     font-family: sans-serif;
     color: #333;
     margin: 10px;
-  }
+}
 
-  
-  
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.testimonial-card h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.testimonial-card small {
+    color: #777;
+    font-size: 14px;
+}
